@@ -39,19 +39,19 @@
 
 <!-- Stats Card -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="100%" />
 </div>
 
 <!-- Top Languages -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ramangosal7&layout=compact&theme=radical" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ramangosal7&layout=compact&theme=radical" alt="Top Languages" width="100%" />
 </div>
 
 <!-- Streak Stats -->
 <h3>🔥 Contribution Streak</h3>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" width="100%" />
 </div>
 
 <!-- Connect Section -->
