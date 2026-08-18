@@ -19,11 +19,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Check METRICS_TOKEN scopes
-        shell: bash
-        run: |
-          SCOPES=$(curl -sI -H "Authorization: Bearer ${{ secrets.METRICS_TOKEN }}" -H "Accept: application/vnd.github+json" https://api.github.com/rate_limit | grep -i '^x-oauth-scopes:' | tr -d '\r')
-          echo "$SCOPES"
+
       - name: GitHub Metrics
         uses: lowlighter/metrics@latest
         with:
@@ -34,4 +30,32 @@ jobs:
           user: ramangosal7
           template: classic
           base: header, activity, community, repositories, metadata
+          config_display: large
+
+      - name: GitHub Metrics (isocalendar — streak)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: "chore: update github-metrics.isocalendar.svg"
+          config_timezone: Asia/Kolkata
+          user: ramangosal7
+          template: classic
+          filename: github-metrics.isocalendar.svg
+          base: ""
+          plugin_isocalendar: yes
+          config_display: large
+
+      - name: GitHub Metrics (languages)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_message: "chore: update github-metrics.languages.svg"
+          config_timezone: Asia/Kolkata
+          user: ramangosal7
+          template: classic
+          filename: github-metrics.languages.svg
+          base: ""
+          plugin_languages: yes
           config_display: large

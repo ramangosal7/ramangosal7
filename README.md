@@ -47,16 +47,16 @@
   <img src="github-metrics.svg" alt="GitHub metrics" width="100%" />
 </div>
 
-<!-- Stats + Streak side by side -->
+<!-- Streak (self-hosted isocalendar) -->
+<h3>🔥 Contribution Streak</h3>
 <div align="center">
-  <img src="https://github-readme-stats-one.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="48%" />
-  <img src="https://streak-stats.demolab.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" width="48%" />
+  <img src="github-metrics.isocalendar.svg" alt="GitHub Contribution Calendar" width="100%" />
 </div>
 
-<!-- Top Languages -->
+<!-- Most Used Languages (self-hosted) -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=ramangosal7&layout=compact&theme=radical" alt="Top Languages" width="100%" />
+  <img src="github-metrics.languages.svg" alt="Most Used Languages" width="100%" />
 </div>
 
 <!-- Connect Section -->
