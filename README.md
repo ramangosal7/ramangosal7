@@ -59,17 +59,6 @@
   <img src="images/top-langs.svg" alt="Most Used Languages" width="420" />
 </div>
 
-<!-- Connect Section -->
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-  <a href="https://x.com/ramangosal7" target="blank">
-    <img align="center" src="images/social/x.svg" alt="ramangosal7" height="30" width="40" />
-  </a>
-  <a href="https://linkedin.com/in/raman-gosal7" target="blank">
-    <img align="center" src="images/social/linkedin.svg" alt="raman-gosal7" height="30" width="40" />
-  </a>
-</p>
-
 <!-- Languages and Tools -->
 <h3 align="left">Languages and Tools:</h3>
 
@@ -120,7 +109,7 @@
     <a href="https://zed.dev/" target="_blank" rel="noreferrer"><img src="images/editor/zed.png" alt="zed" width="40" height="40" style="border-radius: 50%;"/></a>
   </p>
 
-  <h4>Other Tools (AI):</h4>
+  <h4>AI Tools:</h4>
   <p align="left">
     <a href="https://claude.com/claude-code" target="_blank" rel="noreferrer"><img src="images/ai/claude.svg" alt="claude code" width="40" height="40"/></a>
     <a href="https://opencode.ai" target="_blank" rel="noreferrer"><img src="images/ai/opencode.svg" alt="opencode" width="40" height="40"/></a>
