@@ -14,8 +14,8 @@
   <a href="https://linkedin.com/in/raman-gosal7">
     <img src="https://img.shields.io/badge/LinkedIn-raman--gosal7-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com/ramangosal7">
-    <img src="https://img.shields.io/twitter/follow/ramangosal7?style=social" alt="Twitter Follow" />
+  <a href="https://x.com/ramangosal7">
+    <img src="https://img.shields.io/twitter/follow/ramangosal7?label=X&style=social" alt="X Follow" />
   </a>
 </p>
 
@@ -42,21 +42,16 @@
 <!-- GitHub Stats -->
 <h3>📊 GitHub Stats</h3>
 
-<!-- Stats Card -->
+<!-- Stats + Streak side by side -->
 <div align="center">
-  <img src="https://github-readme-stats-one.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="100%" />
+  <img src="https://github-readme-stats-one.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="48%" />
+  <img src="https://streak-stats.demolab.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" width="48%" />
 </div>
 
 <!-- Top Languages -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
   <img src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=ramangosal7&layout=compact&theme=radical" alt="Top Languages" width="100%" />
-</div>
-
-<!-- Streak Stats -->
-<h3>🔥 Contribution Streak</h3>
-<div align="center">
-  <img src="https://streak-stats.demolab.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" width="100%" />
 </div>
 
 <!-- Connect Section -->
@@ -76,7 +71,7 @@
 <h4>Frontend:</h4>
   <p align="left">
     <a href="https://angular.io" target="_blank" rel="noreferrer"><img src="images/frontend/angular.svg" alt="angular" width="40" height="40"/></a>
-    <a href="https://angular.io" target="_blank" rel="noreferrer"><img src="images/frontend/angularjs.svg" alt="angularjs" width="40" height="40"/></a>
+    <a href="https://docs.angularjs.org" target="_blank" rel="noreferrer"><img src="images/frontend/angularjs.svg" alt="angularjs" width="40" height="40"/></a>
     <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="images/frontend/react.svg" alt="react" width="40" height="40"/></a>
     <a href="https://nextjs.org/" target="_blank" rel="noreferrer"><img src="images/frontend/nextjs.svg" alt="nextjs" width="40" height="40"/></a>
     <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"><img src="images/frontend/chartjs.svg" alt="chartjs" width="40" height="40"/></a>
@@ -130,3 +125,20 @@
     <a href="https://ollama.com" target="_blank" rel="noreferrer"><img src="images/ai/ollama.svg" alt="ollama" width="40" height="40"/></a>
     <a href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noreferrer"><img src="images/ai/llamacpp.svg" alt="llama cpp" width="40" height="40"/></a>
   </p>
+
+<!-- Featured Projects -->
+<h3 align="left">📌 Featured Projects</h3>
+<p align="left">
+  <a href="https://github.com/ramangosal7/user_referral" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=user_referral&theme=radical" alt="user_referral" />
+  </a>
+  <a href="https://github.com/ramangosal7/node_with_pg" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=node_with_pg&theme=radical" alt="node_with_pg" />
+  </a>
+  <a href="https://github.com/ramangosal7/pundit_test" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=pundit_test&theme=radical" alt="pundit_test" />
+  </a>
+  <a href="https://github.com/ramangosal7/raman" target="_blank" rel="noreferrer">
+    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=raman&theme=radical" alt="raman" />
+  </a>
+</p>
