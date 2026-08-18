@@ -1,6 +1,11 @@
 <h1 align="center">Hi 👋, I'm Ramandeep Singh</h1>
 <h3 align="center">A Fullstack developer</h3>
 
+<p align="center">
+  Fullstack developer working primarily with <strong>Rails, Node.js, and React</strong>,
+  currently exploring <strong>GoLang</strong> and <strong>GraphQL</strong>, and containerizing projects with <strong>Docker</strong>.
+</p>
+
 <!-- Social quick links -->
 <p align="center">
   <a href="https://github.com/ramangosal7">
@@ -21,7 +26,7 @@
 <!-- GitHub Trophies -->
 <p align="left">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=ramangosal7" alt="ramangosal7" />
+    <img src="https://trophy.ryglcloud.net/?username=ramangosal7" alt="ramangosal7" />
   </a>
 </p>
 
@@ -39,19 +44,19 @@
 
 <!-- Stats Card -->
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="100%" />
+  <img src="https://github-readme-stats-one.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="100%" />
 </div>
 
 <!-- Top Languages -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ramangosal7&layout=compact&theme=radical" alt="Top Languages" width="100%" />
+  <img src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=ramangosal7&layout=compact&theme=radical" alt="Top Languages" width="100%" />
 </div>
 
 <!-- Streak Stats -->
 <h3>🔥 Contribution Streak</h3>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" width="100%" />
+  <img src="https://streak-stats.demolab.com/?user=ramangosal7&theme=radical" alt="GitHub Streak" width="100%" />
 </div>
 
 <!-- Connect Section -->
@@ -68,10 +73,7 @@
 <!-- Languages and Tools -->
 <h3 align="left">Languages and Tools:</h3>
 
-<!-- <details> -->
-  <!-- <summary>Click to expand</summary> -->
-  
-  <h4>Frontend:</h4>
+<h4>Frontend:</h4>
   <p align="left">
     <a href="https://angular.io" target="_blank" rel="noreferrer"><img src="images/frontend/angular.svg" alt="angular" width="40" height="40"/></a>
     <a href="https://angular.io" target="_blank" rel="noreferrer"><img src="images/frontend/angularjs.svg" alt="angularjs" width="40" height="40"/></a>
@@ -117,5 +119,14 @@
     <a href="https://www.windsurf.com/" target="_blank" rel="noreferrer"><img src="images/editor/windsurf.svg" alt="windsurf" width="40" height="40"/></a>
     <a href="https://zed.dev/" target="_blank" rel="noreferrer"><img src="images/editor/zed.png" alt="zed" width="40" height="40" style="border-radius: 50%;"/></a>
   </p>
+
+  <h4>Other Tools (AI):</h4>
+  <p align="left">
+    <a href="https://claude.com/claude-code" target="_blank" rel="noreferrer"><img src="images/ai/claude.svg" alt="claude code" width="40" height="40"/></a>
+    <a href="https://opencode.ai" target="_blank" rel="noreferrer"><img src="images/ai/opencode.svg" alt="opencode" width="40" height="40"/></a>
+    <a href="https://warp.dev" target="_blank" rel="noreferrer"><img src="images/ai/warp.svg" alt="warp" width="40" height="40"/></a>
+    <a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noreferrer"><img src="images/ai/gemini.svg" alt="google gemini" width="40" height="40"/></a>
+    <a href="https://lmstudio.ai" target="_blank" rel="noreferrer"><img src="images/ai/lmstudio.svg" alt="lm studio" width="40" height="40"/></a>
+    <a href="https://ollama.com" target="_blank" rel="noreferrer"><img src="images/ai/ollama.svg" alt="ollama" width="40" height="40"/></a>
+    <a href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noreferrer"><img src="images/ai/llamacpp.svg" alt="llama cpp" width="40" height="40"/></a>
   </p>
-<!-- </details> -->
