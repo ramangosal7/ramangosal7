@@ -44,7 +44,7 @@
 
 <!-- Self-hosted metrics (updated weekly by GitHub Actions) -->
 <div align="center">
-  <img src="github-metrics.svg" alt="GitHub metrics" width="100%" />
+  <img src="images/github-metrics.svg" alt="GitHub metrics" width="100%" />
 </div>
 
 <!-- Streak (self-hosted via DenverCoder1/github-readme-streak-stats) -->

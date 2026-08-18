@@ -4,10 +4,10 @@ on:
   # Weekly schedule — every Monday at 03:00 UTC
   schedule:
     - cron: "0 3 * * 1"
-  # Also run on every push to main
+  # Re-run when this workflow file changes
   push:
-    branches:
-      - main
+    paths:
+      - ".github/workflows/github-metrics.yml"
   # Allow manual triggers from the Actions tab
   workflow_dispatch:
 
@@ -26,6 +26,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           committer_message: "chore: update github-metrics.svg"
+          filename: images/github-metrics.svg
           config_timezone: Asia/Kolkata
           user: ramangosal7
           template: classic
