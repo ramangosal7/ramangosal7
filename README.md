@@ -56,7 +56,7 @@
 <!-- Most Used Languages (self-hosted via github-readme-stats-action, pie) -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="images/top-langs.svg" alt="Most Used Languages" width="100%" />
+  <img src="images/top-langs.svg" alt="Most Used Languages" width="420" />
 </div>
 
 <!-- Languages and Tools -->
