@@ -50,13 +50,13 @@
 <!-- Streak (self-hosted via DenverCoder1/github-readme-streak-stats) -->
 <h3>🔥 Contribution Streak</h3>
 <div align="center">
-  <img src="images/streak.svg" alt="GitHub Contribution Streak" width="495" />
+  <img src="images/streak.svg" alt="GitHub Contribution Streak" width="100%" />
 </div>
 
 <!-- Most Used Languages (self-hosted via github-readme-stats-action, pie) -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="images/top-langs.svg" alt="Most Used Languages" width="420" />
+  <img src="images/top-langs.svg" alt="Most Used Languages" width="100%" />
 </div>
 
 <!-- Languages and Tools -->
@@ -106,7 +106,7 @@
   <p align="left">
     <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="images/editor/vscode.ico" alt="vscode" width="40" height="40"/></a>
     <a href="https://www.windsurf.com/" target="_blank" rel="noreferrer"><img src="images/editor/windsurf.svg" alt="windsurf" width="40" height="40"/></a>
-    <a href="https://zed.dev/" target="_blank" rel="noreferrer"><img src="images/editor/zed.png" alt="zed" width="40" height="40" style="border-radius: 50%;"/></a>
+    <a href="https://zed.dev/" target="_blank" rel="noreferrer"><img src="images/editor/zed.svg" alt="zed" width="40" height="40"/></a>
   </p>
 
   <h4>AI Tools:</h4>
