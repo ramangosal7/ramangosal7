@@ -1,9 +1,9 @@
 name: Update top languages
 
 on:
-  # Daily at 03:30 UTC (staggered after the streak workflow)
+  # Weekly — every Monday at 03:30 UTC (staggered after metrics/streak)
   schedule:
-    - cron: "30 3 * * *"
+    - cron: "30 3 * * 1"
   # Re-run when this workflow file changes
   push:
     paths:
@@ -26,13 +26,23 @@ jobs:
         with:
           card: top-langs
           options: "username=ramangosal7&layout=pie&theme=radical&langs_count=8&disable_animations=true&hide_progress=false"
-          path: profile/top-langs.svg
+          path: images/top-langs.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          fail_on_error: "true"
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile/top-langs.svg
-          git commit -m "chore: update top-langs [skip ci]" || exit 0
-          git push
+          git add images/top-langs.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update top-langs [skip ci]"
+          # Rebase onto any commits other workflows pushed while we ran, then push
+          git pull --rebase --autostash origin main
+          git push || {
+            git pull --rebase --autostash origin main
+            git push
+          }
