@@ -42,6 +42,11 @@
 <!-- GitHub Stats -->
 <h3>📊 GitHub Stats</h3>
 
+<!-- Self-hosted metrics (updated weekly by GitHub Actions) -->
+<div align="center">
+  <img src="github-metrics.svg" alt="GitHub metrics" width="100%" />
+</div>
+
 <!-- Stats + Streak side by side -->
 <div align="center">
   <img src="https://github-readme-stats-one.vercel.app/api?username=ramangosal7&show_icons=true&locale=en&theme=radical" alt="GitHub Stats" width="48%" />
@@ -125,20 +130,3 @@
     <a href="https://ollama.com" target="_blank" rel="noreferrer"><img src="images/ai/ollama.svg" alt="ollama" width="40" height="40"/></a>
     <a href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noreferrer"><img src="images/ai/llamacpp.svg" alt="llama cpp" width="40" height="40"/></a>
   </p>
-
-<!-- Featured Projects -->
-<h3 align="left">📌 Featured Projects</h3>
-<p align="left">
-  <a href="https://github.com/ramangosal7/user_referral" target="_blank" rel="noreferrer">
-    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=user_referral&theme=radical" alt="user_referral" />
-  </a>
-  <a href="https://github.com/ramangosal7/node_with_pg" target="_blank" rel="noreferrer">
-    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=node_with_pg&theme=radical" alt="node_with_pg" />
-  </a>
-  <a href="https://github.com/ramangosal7/pundit_test" target="_blank" rel="noreferrer">
-    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=pundit_test&theme=radical" alt="pundit_test" />
-  </a>
-  <a href="https://github.com/ramangosal7/raman" target="_blank" rel="noreferrer">
-    <img src="https://github-readme-stats-one.vercel.app/api/pin/?username=ramangosal7&repo=raman&theme=radical" alt="raman" />
-  </a>
-</p>
