@@ -25,7 +25,6 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           committer_message: "chore: update github-metrics.svg"
-          config_include_private: true
           config_timezone: Asia/Kolkata
           user: ramangosal7
           template: classic
