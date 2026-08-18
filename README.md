@@ -47,16 +47,16 @@
   <img src="github-metrics.svg" alt="GitHub metrics" width="100%" />
 </div>
 
-<!-- Streak (self-hosted isocalendar) -->
+<!-- Streak (self-hosted via DenverCoder1/github-readme-streak-stats) -->
 <h3>🔥 Contribution Streak</h3>
 <div align="center">
-  <img src="github-metrics.isocalendar.svg" alt="GitHub Contribution Calendar" width="100%" />
+  <img src="profile/streak.svg" alt="GitHub Contribution Streak" width="495" />
 </div>
 
-<!-- Most Used Languages (self-hosted) -->
+<!-- Most Used Languages (self-hosted via github-readme-stats-action, pie) -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="github-metrics.languages.svg" alt="Most Used Languages" width="100%" />
+  <img src="profile/top-langs.svg" alt="Most Used Languages" width="420" />
 </div>
 
 <!-- Connect Section -->

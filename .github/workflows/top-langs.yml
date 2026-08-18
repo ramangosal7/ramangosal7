@@ -1,0 +1,38 @@
+name: Update top languages
+
+on:
+  # Daily at 03:30 UTC (staggered after the streak workflow)
+  schedule:
+    - cron: "30 3 * * *"
+  # Re-run when this workflow file changes
+  push:
+    paths:
+      - ".github/workflows/top-langs.yml"
+  # Allow manual triggers from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  top-langs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate top languages (pie)
+        uses: readme-tools/github-readme-stats-action@main
+        with:
+          card: top-langs
+          options: "username=ramangosal7&layout=pie&theme=radical&langs_count=8&disable_animations=true&hide_progress=false"
+          path: profile/top-langs.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/top-langs.svg
+          git commit -m "chore: update top-langs [skip ci]" || exit 0
+          git push
