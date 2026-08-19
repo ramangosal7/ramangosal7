@@ -26,7 +26,7 @@
 -->
 
 <!-- GitHub Trophies (self-hosted via soulteary/github-profile-trophy-action) -->
-<p align="left">
+<p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img src="images/trophy.svg" alt="ramangosal7" />
   </a>
