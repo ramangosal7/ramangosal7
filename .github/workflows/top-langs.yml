@@ -21,14 +21,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate top languages (pie)
+      - name: Generate top languages (compact text)
         uses: readme-tools/github-readme-stats-action@main
         with:
           card: top-langs
-          options: "username=ramangosal7&layout=pie&theme=radical&langs_count=8&disable_animations=true&hide_progress=false"
+          options: "username=ramangosal7&layout=compact&theme=radical&langs_count=8&card_width=495&disable_animations=true&hide_progress=true"
           path: images/top-langs.svg
           token: ${{ secrets.METRICS_TOKEN }}
           fail_on_error: "true"
+
+      - name: Reflow legend to 4 columns x 2 rows
+        run: python3 .github/scripts/reflow_top_langs.py images/top-langs.svg
 
       - name: Commit and push
         run: |
