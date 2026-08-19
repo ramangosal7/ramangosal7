@@ -25,10 +25,10 @@
 </p>
 -->
 
-<!-- GitHub Trophies -->
+<!-- GitHub Trophies (self-hosted via soulteary/github-profile-trophy-action) -->
 <p align="left">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-<img src="https://trophy.ryglcloud.net/?username=ramangosal7&title=LongTimeUser,Experience,Commits" alt="ramangosal7" />
+    <img src="images/trophy.svg" alt="ramangosal7" />
   </a>
 </p>
 

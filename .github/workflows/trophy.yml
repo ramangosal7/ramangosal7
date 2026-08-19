@@ -1,0 +1,46 @@
+name: Update trophy
+
+on:
+  # Weekly — every Monday at 04:00 UTC (staggered after metrics/streak/top-langs)
+  schedule:
+    - cron: "0 4 * * 1"
+  # Re-run when this workflow file changes
+  push:
+    paths:
+      - ".github/workflows/trophy.yml"
+  # Allow manual triggers from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  trophy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate trophy card
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: "username=ramangosal7&title=LongTimeUser,Experience,Commits&column=3"
+          path: images/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/trophy.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update trophy [skip ci]"
+          # Rebase onto any commits other workflows pushed while we ran, then push
+          git pull --rebase --autostash origin main
+          git push || {
+            git pull --rebase --autostash origin main
+            git push
+          }
