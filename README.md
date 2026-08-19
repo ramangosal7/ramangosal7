@@ -19,14 +19,16 @@
   </a>
 </p>
 
+<!-- Profile views
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=ramangosal7&label=Profile%20views&color=0e75b6&style=flat" alt="ramangosal7" />
 </p>
+-->
 
 <!-- GitHub Trophies -->
 <p align="left">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://trophy.ryglcloud.net/?username=ramangosal7" alt="ramangosal7" />
+<img src="https://trophy.ryglcloud.net/?username=ramangosal7&title=LongTimeUser,Experience,Commits" alt="ramangosal7" />
   </a>
 </p>
 
