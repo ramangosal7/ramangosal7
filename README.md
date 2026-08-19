@@ -53,10 +53,10 @@
   <img src="images/streak.svg" alt="GitHub Contribution Streak" width="100%" />
 </div>
 
-<!-- Most Used Languages (self-hosted via github-readme-stats-action, pie) -->
+<!-- Most Used Languages (self-hosted via github-readme-stats-action, compact) -->
 <h3>💻 Most Used Languages</h3>
 <div align="center">
-  <img src="images/top-langs.svg" alt="Most Used Languages" width="420" />
+  <img src="images/top-langs.svg" alt="Most Used Languages" width="100%" />
 </div>
 
 <!-- Languages and Tools -->
