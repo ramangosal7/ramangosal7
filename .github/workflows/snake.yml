@@ -1,0 +1,47 @@
+name: Update snake
+
+on:
+  # Weekly — every Monday at 04:30 UTC (staggered after trophy at 04:00)
+  schedule:
+    - cron: "30 4 * * 1"
+  # Re-run when this workflow file changes
+  push:
+    paths:
+      - ".github/workflows/snake.yml"
+  # Allow manual triggers from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate snake SVGs (light + dark)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ramangosal7
+          outputs: |
+            images/snake.svg
+            images/snake-dark.svg?palette=github-dark
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/snake.svg images/snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: update snake [skip ci]"
+          # Rebase onto any commits other workflows pushed while we ran, then push
+          git pull --rebase --autostash origin main
+          git push || {
+            git pull --rebase --autostash origin main
+            git push
+          }

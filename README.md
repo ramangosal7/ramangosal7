@@ -1,6 +1,11 @@
 <h1 align="center">Hi 👋, I'm Ramandeep Singh</h1>
 <h3 align="center">A Fullstack developer</h3>
 
+<!-- Animated typing tagline (DenverCoder1/readme-typing-svg) -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=Rails+Developer,Node.js+and+React,Learning+GoLang,Docker+and+DevOps" alt="Typing SVG" />
+</p>
+
 <p align="center">
   Fullstack developer working primarily with <strong>Rails, Node.js, and React</strong>,
   currently exploring <strong>GoLang</strong> and <strong>GraphQL</strong>, and containerizing projects with <strong>Docker</strong>.
@@ -62,6 +67,13 @@ Self-hosted metrics (updated weekly by GitHub Actions)
   <img src="images/top-langs.svg" alt="Most Used Languages" width="100%" />
 </div>
 
+<!-- Contribution snake (self-hosted via Platane/snk) -->
+<h3>🐍 Contribution Snake</h3>
+<picture align="center">
+  <source media="(prefers-color-scheme: dark)" srcset="images/snake-dark.svg" />
+  <img src="images/snake.svg" alt="Contribution snake" width="100%" />
+</picture>
+
 <!-- Languages and Tools -->
 <h3 align="left">Languages and Tools:</h3>
 
@@ -122,3 +134,8 @@ Self-hosted metrics (updated weekly by GitHub Actions)
     <a href="https://ollama.com" target="_blank" rel="noreferrer"><img src="images/ai/ollama.svg" alt="ollama" width="40" height="40"/></a>
     <a href="https://github.com/ggml-org/llama.cpp" target="_blank" rel="noreferrer"><img src="images/ai/llamacpp.svg" alt="llama cpp" width="40" height="40"/></a>
   </p>
+
+<!-- Random dev quote (shravan20/github-readme-quotes) -->
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal" alt="Dev Quote" width="100%" />
+</div>
