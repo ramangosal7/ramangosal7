@@ -3,7 +3,7 @@
 
 <!-- Animated typing tagline (DenverCoder1/readme-typing-svg) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=Rails+Developer,Node.js+and+React,Learning+GoLang,Docker+and+DevOps" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&height=50&lines=Rails+Developer,Node.js+and+React" alt="Typing SVG" />
 </p>
 
 <p align="center">
