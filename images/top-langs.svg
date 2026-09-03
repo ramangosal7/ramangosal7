@@ -149,14 +149,14 @@
         TypeScript 
       </text>
     </g></g><g transform="translate(220, 25)"><g class="stagger" style="animation-delay: 750ms">
-      <circle cx="5" cy="6" r="5" fill="#4F5D95" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        PHP 
-      </text>
-    </g></g><g transform="translate(330, 25)"><g class="stagger" style="animation-delay: 900ms">
       <circle cx="5" cy="6" r="5" fill="#384d54" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
         Dockerfile 
+      </text>
+    </g></g><g transform="translate(330, 25)"><g class="stagger" style="animation-delay: 900ms">
+      <circle cx="5" cy="6" r="5" fill="#4F5D95" />
+      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
+        PHP 
       </text>
     </g></g></svg>
   
