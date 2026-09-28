@@ -19,16 +19,36 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      - name: Generate top languages (compact text)
-        uses: readme-tools/github-readme-stats-action@main
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
         with:
-          card: top-langs
-          options: "username=ramangosal7&layout=compact&theme=radical&langs_count=8&card_width=495&disable_animations=true&hide_progress=true"
-          path: images/top-langs.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          fail_on_error: "true"
+          node-version: "24"
+
+      - name: Install card core (same version the action pins)
+        run: npm install --no-save --ignore-scripts @stats-organization/github-readme-stats-core@2.2.0
+
+      # The action only wires a single token (PAT_1), so its retryer throws
+      # MAX_RETRY as soon as that token is rate-limited. Our generator loads the
+      # same core but exposes the full PAT_* rotation (PAT_1 = METRICS_TOKEN,
+      # PAT_2 = GITHUB_TOKEN) so a rate-limited token is rotated instead of
+      # failing. Retry with backoff to ride out a transient rate-limit window.
+      - name: Generate top languages (compact text)
+        uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 10
+          max_attempts: 6
+          retry_wait_seconds: 30
+          retry_on: error
+          shell: bash
+          command: |
+            node .github/scripts/generate_top_langs.mjs
+        env:
+          OUTPUT_PATH: images/top-langs.svg
+          CARD_OPTIONS: "username=ramangosal7&layout=compact&theme=radical&langs_count=8&card_width=495&disable_animations=true&hide_progress=true"
+          PAT_1: ${{ secrets.METRICS_TOKEN }}
+          PAT_2: ${{ github.token }}
 
       - name: Reflow legend to 4 columns x 2 rows
         run: python3 .github/scripts/reflow_top_langs.py images/top-langs.svg
