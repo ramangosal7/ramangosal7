@@ -26,7 +26,10 @@ jobs:
         with:
           options: "user=ramangosal7&theme=radical&disable_animations=true&timezone=Asia/Kolkata"
           path: images/streak.svg
-          token: ${{ secrets.METRICS_TOKEN }}
+          # Use GitHub's always-valid automatic token rather than METRICS_TOKEN,
+          # which is returning 401 Bad credentials. Public contribution data needs
+          # no PAT; github.token is scoped to this repo and never expires.
+          token: ${{ github.token }}
 
       - name: Commit and push
         run: |
